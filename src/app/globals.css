@@ -1,8 +1,12 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
+
+body {
+  scroll-behavior: smooth;
+}
 
 @theme {
   --color-background: hsl(var(--background));
@@ -43,7 +47,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 
-  --background-image-header: url('../assets/bg-header.png');
+  --background-image-header: url("../assets/bg-header.png");
 }
 
 /*

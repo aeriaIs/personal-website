@@ -17,7 +17,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="w-full h-16 fixed z-10 bg-transparent">
+    <header className="w-full h-16 bg-transparent">
       <Container className="w-full h-full flex justify-between items-center shrink-0 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <MountainIcon className="h-5 w-5" />

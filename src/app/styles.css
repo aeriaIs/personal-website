@@ -1,7 +1,15 @@
-.page-scroller {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  /* scroll-behavior: smooth; */
-  scroll-snap-type: y mandatory;
+@media screen and (min-width: 64rem) {
+  .page-scroller {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .page-scroller > div {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+  }
 }

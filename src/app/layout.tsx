@@ -3,10 +3,7 @@ import { Urbanist } from "next/font/google";
 
 import "./globals.css";
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
-  subsets: ["latin"]
-});
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], style: ["normal", "italic"] });
 
 export const metadata: Metadata = {
   title: "Yudho Aerials",
@@ -20,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable} antialiased`}>{children}</body>
+      <body className={`${urbanist.className} antialiased`}>{children}</body>
     </html>
   );
 }
