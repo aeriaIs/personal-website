@@ -114,7 +114,7 @@ const EXPERTISE = [
 
 export default function AboutMe() {
   return (
-    <Container className="w-full p-6 pt-6 md:pt-12">
+    <Container className="w-full h-full p-6 pt-6 md:py-12 flex flex-col">
       <div className="w-full flex flex-row justify-between items-center gap-x-4">
         <h5 className="text-muted-foreground">About Me</h5>
         <div className="w-full max-w-1/4 flex justify-end items-center gap-5">
@@ -127,7 +127,7 @@ export default function AboutMe() {
           ))}
         </div>
       </div>
-      <div className="mt-6 md:mt-12">
+      <div className="mt-6 md:mt-12 lg:mt-20 flex-1 flex flex-col justify-between">
         <div className="mt-2.5 w-full flex flex-col lg:flex-row justify-between items-center lg:items-start gap-14">
           <p className="mt-10 flex-1 h-full text-foreground text-xl sm:text-[28px] text-justify leading-tight text-pretty">
             I am a software engineer with 3+ years of experience specializing in front-end development. With a focus on{" "}
