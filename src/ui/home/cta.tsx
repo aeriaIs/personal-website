@@ -16,18 +16,22 @@ export default function CallToAction() {
         <h5 className="text-muted-foreground">Reach Me</h5> <p className="font-semibold text-primary italic">Out -</p>
       </div>
       <div className="mt-2 flex flex-col justify-center items-center gap-4">
-        <Link href="#mailto:yalfantyo@gmail.com" className="w-fit text-lg font-semibold">
-          <Button variant="outline" className="rounded-md" size="lg">
+        <Button variant="outline" className="rounded-md" size="lg">
+          <Link href="#mailto:yalfantyo@gmail.com" target="_blank" className="w-fit flex justify-center items-center text-lg font-semibold">
             <Mail className="size-6" />
             <p className="ml-2">Contact Me</p>
-          </Button>
-        </Link>
-        <Link href="https://www.linkedin.com/in/yudhoalfantyo" className="w-fit text-lg font-semibold">
-          <Button className="bg-blue-600 hover:bg-blue-700 rounded-md" size="lg">
+          </Link>
+        </Button>
+        <Button className="bg-blue-600 hover:bg-blue-700 rounded-md" size="lg">
+          <Link
+            href="https://www.linkedin.com/in/yudhoalfantyo"
+            target="_blank"
+            className="w-fit flex justify-center items-center text-lg font-semibold"
+          >
             <SiLinkedin className="size-6" />
             <p className="ml-2">Contact Me</p>
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </div>
     </Container>
   );
