@@ -114,7 +114,7 @@ const EXPERTISE = [
 
 export default function AboutMe() {
   return (
-    <Container className="w-full h-full p-6 pt-6 md:py-12 flex flex-col">
+    <Container id="about-me" className="w-full h-full p-6 pt-6 md:py-12 flex flex-col">
       <div className="w-full flex flex-row justify-between items-center gap-x-4">
         <h5 className="text-muted-foreground">About Me</h5>
         <div className="w-full max-w-1/4 flex justify-end items-center gap-5">

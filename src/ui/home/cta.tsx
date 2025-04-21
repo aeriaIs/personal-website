@@ -3,10 +3,10 @@
 import Link from "next/link";
 
 import { Mail } from "lucide-react";
+import { SiLinkedin } from "react-icons/si";
 
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui";
-import { SiLinkedin } from "react-icons/si";
 
 export default function CallToAction() {
   return (

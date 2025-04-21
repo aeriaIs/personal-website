@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <Container className="w-full h-full p-6 flex flex-col justify-center items-center gap-5">
+    <Container id="home" className="w-full h-full p-6 flex flex-col justify-center items-center gap-5">
       <div className="flex flex-col justify-center items-center gap-y-4">
         <h1 className="text-7xl text-muted-foreground">
           Hi, I'm <span className="font-semibold text-primary">Yudho Alfantyo,</span>

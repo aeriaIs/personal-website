@@ -10,10 +10,10 @@ import { ToggleTheme } from "@/components/theme/toggle-button";
 
 function Navbar() {
   const menus = [
-    { title: "Home", path: "/your-path" },
-    { title: "Blog", path: "/your-path" },
-    { title: "About Us", path: "/your-path" },
-    { title: "Contact Us", path: "/your-path" }
+    { title: "Home", path: "#home" },
+    { title: "About Us", path: "#about-me" },
+    { title: "Contact", path: "#contact" },
+    { title: "Blog", path: "/blog" }
   ];
 
   return (
@@ -36,7 +36,7 @@ function Navbar() {
               <MountainIcon className="h-6 w-6" />
             </Link>
             <div className="grid gap-2 py-6">
-              <Link href="#" className="w-full flex items-center py-2 text-lg font-semibold" prefetch={false}>
+              <Link href="#home" className="w-full flex items-center py-2 text-lg font-semibold" prefetch={false}>
                 Home
               </Link>
               <Link href="#" className="w-full flex items-center py-2 text-lg font-semibold" prefetch={false}>
@@ -54,7 +54,7 @@ function Navbar() {
             <Link
               key={index}
               href={menu.path}
-              className="flex flex-col justify-center items-center py-2 font-semibold hover:text-accent"
+              className="flex flex-col justify-center items-center py-2 font-semibold hover:text-muted-foreground"
               prefetch={false}
             >
               {menu.title}
