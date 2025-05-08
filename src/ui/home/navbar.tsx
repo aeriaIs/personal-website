@@ -60,7 +60,6 @@ function Navbar() {
               {menu.title}
             </Link>
           ))}
-          <ToggleTheme />
         </nav>
       </Container>
     </header>

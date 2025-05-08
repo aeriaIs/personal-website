@@ -6,7 +6,7 @@ import Ava from "@/assets/profile-photo.png";
 
 import { Container } from "@/components/container";
 
-const CONNECTS = [
+export const CONNECTS = [
   {
     name: "Linkedin",
     icon: (
